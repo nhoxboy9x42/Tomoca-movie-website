@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #FFF;
+  text-decoration: none;
+}
+.container{
+    background-color: #e5e5e5;
+}
+
+/*CSS Phần đầu */
+.header{
+    width: 100%;
+    height: 59px;
+    background-color: #2D2D2D;
+    border-bottom: 3px solid #FF7300;
+}
+.header-barmenu {
+    width: 995px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-barmenu ul{
+    width: 530px;
+    padding-top: 18px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    padding-top: 10px;
+}
+.header-user{
+    padding-top: 10px;
+}
+#ls{
+    padding: 10px;
+    font-size: 24px;
+}
+/*Hết CSS header bar*/
+/*SlideShow*/
+.banner{
+    width: 995px;
+    margin: auto;
+    display: flex;
+}
+.slider{
+    width: 995px;
+    height: 500px;
+    overflow: hidden;
+}
+  
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+  
+.slides input{
+    display: none;
+}
+  
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+.slide img{
+    width: 995px;
+    height: 500px;
+}
+  
+  /*css for manual slide navigation*/
+  
+.navigation-manual{
+    position: absolute;
+    width: 995px;
+    margin-top: -27px;
+    display: flex;
+    justify-content: center;
+}
+  
+.manual-btn{
+    margin-top: 5px;
+    background: #FFFFFF;
+    opacity: 0.5;
+    padding: 0px;
+    height: 3px;
+    width: 70px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.manual-btn:not(:last-child){
+    margin-right: 5px;
+}
+  
+.manual-btn:hover{
+    background: #FFF;
+}
+  
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+  
+  /*css for automatic navigation*/
+  
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 995px;
+    justify-content: center;
+    margin-top: 473px;
+}
+
+.navigation-auto div{
+    
+    height: 7px;
+    width: 70px;
+    transition: 0.2s;
+}
+  
+.navigation-auto div:not(:last-child){
+    margin-right: 5px;
+}
+  
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #FFF;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #FFF;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #FFF;
+}
+  
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #FFF;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #FFF;
+}
+/*End--SlideShow*/
+
+/*Start Search*/
+.img-s{
+    padding-top: 4px;
+    padding-left: 4px;
+    background-color:rgba(51, 51, 51, 0.2); 
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 31px;
+    height: 31px;
+}
+.bd-imgs{
+    background-color: #E5E5E5;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+.bd-imgs img{
+    padding-left: 6px;
+    padding-top: 5px;
+}
+
+.h-search{
+    position: absolute;
+    height: 31px;
+    width: 291px;
+    margin-left: 680px;
+    display: flex;
+    margin-top: 16px;
+}
+.h-search input{
+    height: 31px;
+    width: 240px;
+    background-color: rgba(51, 51, 51, 0.2);
+    color: #000;
+    border: none;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+.search{
+    background-color: #FF7300;
+    border-radius: 10px;
+    width: 38px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#search{
+    padding-left: 9px;
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.bd-search{
+    background-color:rgba(51, 51, 51, 0.2); 
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+/*START TICKET*/
+.btn-ticket{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 840px;
+}
+/*END TICKET*/
+
+/*START NEXT SLIDESHOW*/
+.vector-next{
+    position: absolute;
+}
+.border-vectorl{
+    margin-left: 22px;
+    margin-top: 230px ;
+    width: 40px;
+    height: 59px;
+    border-radius: 5px;
+    background: #C4C4C4;
+    opacity: 0.8;
+}
+.border-vectorr{
+    margin-left: 933px;
+    margin-top: -60px;
+    width: 40px;
+    height: 59px;
+    border-radius: 5px;
+    background: #C4C4C4;
+    opacity: 0.8;
+}
+#vt-left{
+    padding: 17px 13px;
+}
+#vt-right{
+    padding: 17px 13px;
+}
+/*END NEXT SLIDESHOW*/
